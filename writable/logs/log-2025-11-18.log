@@ -1,0 +1,135 @@
+ERROR - 2025-11-18 15:03:17 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\laragon\www\server_api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\server_api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 C:\laragon\www\server_api\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\server_api\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\server_api\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\server_api\app\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\server_api\system\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+#6 C:\laragon\www\server_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+#7 C:\laragon\www\server_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\server_api\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\server_api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\server_api\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\server_api\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\laragon\www\server_api\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\server_api\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\server_api\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\server_api\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\server_api\app\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\server_api\system\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+#5 C:\laragon\www\server_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+#6 C:\laragon\www\server_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\server_api\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\server_api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\server_api\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\server_api\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-11-18 15:03:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+[Method: GET, Route: get-staff]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_staff`', [], false)
+ 3 APPPATH\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\server_api\\public\\index.php')
+ERROR - 2025-11-18 15:03:21 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\laragon\www\server_api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\server_api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 C:\laragon\www\server_api\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\server_api\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\server_api\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\server_api\app\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\server_api\system\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+#6 C:\laragon\www\server_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+#7 C:\laragon\www\server_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\server_api\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\server_api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\server_api\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\server_api\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\laragon\www\server_api\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\server_api\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\server_api\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\server_api\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\server_api\app\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\server_api\system\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+#5 C:\laragon\www\server_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+#6 C:\laragon\www\server_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\server_api\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\server_api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\server_api\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\server_api\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-11-18 15:03:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+[Method: GET, Route: get-staff]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_staff`', [], false)
+ 3 APPPATH\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\server_api\\public\\index.php')
+ERROR - 2025-11-18 15:05:18 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4' in C:\laragon\www\server_api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\server_api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4', 3306, '', 0)
+#1 C:\laragon\www\server_api\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\server_api\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\server_api\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\server_api\app\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\server_api\system\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+#6 C:\laragon\www\server_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+#7 C:\laragon\www\server_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\server_api\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\server_api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\laragon\www\server_api\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\laragon\www\server_api\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4' in C:\laragon\www\server_api\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\server_api\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\server_api\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\server_api\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\server_api\app\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\server_api\system\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+#5 C:\laragon\www\server_api\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+#6 C:\laragon\www\server_api\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\server_api\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\server_api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\laragon\www\server_api\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\laragon\www\server_api\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2025-11-18 15:05:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci4'
+[Method: GET, Route: get-staff]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_staff`', [], false)
+ 3 APPPATH\Controllers\ServerApi.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ServerApi->getDataStaff()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ServerApi))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\server_api\\public\\index.php')
